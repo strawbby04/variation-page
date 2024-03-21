@@ -1,0 +1,184 @@
+@font-face {
+    src: url("fonts/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.woff2") format("woff2"),
+        url('fonts/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf') format('truetype');
+
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: normal;
+    } 
+
+body {background: 
+        linear-gradient(90deg,#EACBCE 20%, #FEFAD3 10%); 
+        font-family: Roboto Serif;}
+
+
+/* how the page wrapper will appear on mobile */
+#page-wrapper{
+    width: min(100% - 3rem, 100ch);
+    margin-inline: auto;
+}
+
+.pound-cake {
+    font-size: 75px;
+    margin-top: -120px;
+       
+}
+.heart{
+    margin-top: -80px;
+}
+.roboto {
+    font-size: 125px;
+    text-shadow: 8px 4px 0px #EACBCE;
+}
+
+p{
+    font-size: 20px;
+
+}
+.heart {
+    font-size: 50px;
+    padding-bottom:-125px;
+}
+h1
+{
+    font-size: 30px; 
+    color: #819688;
+    font-weight:bolder
+}
+/* notecards */
+.card {
+    /* width: 500px; */
+    /* height: 200px; */
+    border-radius: 50px;
+    background-color: #f7f7f7;
+    padding:20px;
+    display: inline-flex;
+    ;
+  }
+
+.note {
+    /* width: 500px; */
+    /* height: 200px; */
+    border-radius: 25px;
+    background-color: #f7f7f7;
+    padding:10px;
+}
+
+.box{
+    /* width: 500px; */
+    /* height: 200px; */
+    border-radius: 25px;
+    background-color: #f7f7f7;
+    padding:10px;
+}
+
+h2{
+    font-size: 25px;
+}
+/* how the page wrapper appears on desktop */
+@media only screen and (min-width:800px){
+.page-wrapper{
+display: grid;
+grid-gap: 25px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas: 
+    "h v"
+    "a a";
+}
+
+.history {
+grid-area: h;
+}
+
+.variations{
+grid-area: v;
+}
+
+#variations {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+        "v v v v v v"
+        "s s r r r r"
+        "s s r r r r"; 
+}
+
+.variable-text {
+    grid-area: v;
+}
+
+.side-bar {
+    grid-area: s;
+}
+
+.recipe {
+    grid-area: r;
+}
+
+.alphabet {
+grid-area: a;
+}
+}
+/* CSS for the footer */
+footer{
+    background-color: #819688;
+}
+
+/* variable font animation */
+h3{
+    font-weight:20; 
+    font-size: 5em;
+    animation: weightChange 7s infinite;
+}
+
+.recipe{
+    margin-left: 1px;
+    font-size: 25px;
+    color: #819688;
+}
+@keyframes weightChange {
+    0%, 100%{
+        font-variation-settings: "wdth" 100, "opsz" 20, "wght" 100, "GRAD" 0;
+        }
+
+    50% { 
+        font-variation-settings: "wdth" 100, "opsz" 20, "wght" 900, "GRAD" 0;
+        }
+    
+}
+/* variable font that changes on hover */
+.variable-font{
+    font-weight:1 ;
+    height:100vh;
+    font-size: 10em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
+    transition: 
+        font-weight 500ms,
+        font-variation-settings 3s;
+}
+.characters {
+    font-size: 150px;
+}
+
+
+.variable-font:hover{
+    font-weight:500 ;
+    height:100vh;
+    font-size: 7em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
+}
+footer {
+    color: #ffffff;
+}
