@@ -168,7 +168,9 @@ h3{
     font-size: 150px;
 }
 
-
+.review {
+    color:#9D5C64;
+}
 .variable-font:hover{
     font-weight:500 ;
     height:100vh;
