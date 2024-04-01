@@ -33,11 +33,21 @@ body {background:
 
 p{
     font-size: 20px;
-
 }
+
 .heart {
     font-size: 50px;
     padding-bottom:-125px;
+}
+
+.review {
+    margin-top: -40px;
+    font-size: 30px;
+}
+
+ul{
+    color: #9D5C64;
+    font-size: 20px;
 }
 h1
 {
@@ -183,4 +193,10 @@ h3{
 }
 footer {
     color: #ffffff;
+    font-weight:regular;
+}
+
+.download {
+    color:#ffffff; 
+    font-weight:bold; 
 }
