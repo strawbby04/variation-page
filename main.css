@@ -53,7 +53,8 @@ h1
 {
     font-size: 30px; 
     color: #819688;
-    font-weight:bolder
+    font-weight:bolder;
+    /* padding-bottom: 25px; */
 }
 /* notecards */
 .card {
@@ -68,7 +69,9 @@ h1
 
 .note {
     /* width: 500px; */
-    /* height: 200px; */
+    /* margin-top: 45px; */
+    padding-bottom: 30px;
+    height: 120px;
     border-radius: 25px;
     background-color: #f7f7f7;
     padding:10px;
@@ -76,7 +79,10 @@ h1
 
 .box{
     /* width: 500px; */
-    /* height: 200px; */
+    /* margin-top: 45px; */
+    padding-bottom: 30px;
+    height: 120px;
+    width: 175px;
     border-radius: 25px;
     background-color: #f7f7f7;
     padding:10px;
